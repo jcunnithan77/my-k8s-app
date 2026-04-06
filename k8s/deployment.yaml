@@ -15,7 +15,7 @@ spec:
       containers:
       - name: test-app
         # This tag will be updated automatically by GitHub Actions
-        image: registry.sriviz.com/test-app:latest
+        image: registry.sriviz.com/test-app:de8a0bf563052a386bdeabbfab6b3f01815b2d2a
         ports:
         - containerPort: 3000
 ---
