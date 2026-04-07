@@ -12,10 +12,13 @@ spec:
       labels:
         app: test-app
     spec:
+      # This links to the 'regcred' secret we created in the terminal
+      imagePullSecrets:
+        - name: regcred
       containers:
       - name: test-app
-        # This tag will be updated automatically by GitHub Actions
         image: registry.sriviz.com/test-app:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 3000
 ---
