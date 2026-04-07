@@ -17,7 +17,7 @@ spec:
         - name: regcred
       containers:
       - name: test-app
-        image: registry.sriviz.com/test-app:53186ebfd65288c13045ac273a705d00a99328bf
+        image: registry.sriviz.com/test-app:6de087d61e252a37a846b674f80936590eba0876
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
